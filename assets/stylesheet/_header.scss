@@ -1,0 +1,89 @@
+.header {
+   background-image: url("../media/images/banner.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.top-nav {
+    padding: 16px 50px;
+}
+
+.top-nav a {
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(245, 10, 69);
+}
+
+.nav-links a {
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+}
+
+li {
+    margin-left: 32px;
+}
+
+.ham {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.hero-section {
+    color: white;
+    padding: 180px 0;
+    .hero-heading {
+        font-size: 48px;
+        font-weight: 800;
+    }
+}    
+
+.btn {
+    color: white;
+    border: 2px solid white;
+    padding: 12px 32px;
+    font-size: 24px;
+    background-color: transparent;
+    margin: 50px 0;
+}
+
+@media all and (max-width: 786px) {
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 80px;
+        background-color: seagreen;
+        li {
+            margin: 32px 0;
+            a {
+                color: red;
+            }
+        }    
+    }
+    
+    .logo {
+        z-index: 999;
+    }
+
+    .ham {
+        font-size: 28px;
+        color: red;
+        display: inline-block;
+        z-index: 999;
+    }
+
+    .toggle:checked ~ .nav-links {
+        display: inline-block;
+        background-color: black;
+        height: 300px;
+    }
+}
