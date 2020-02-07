@@ -146,40 +146,6 @@ li {
   margin: 50px 0;
 }
 
-@media all and (max-width: 786px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding-top: 80px;
-    background-color: seagreen;
-  }
-  .nav-links li {
-    margin: 32px 0;
-  }
-  .nav-links li a {
-    color: red;
-  }
-  .logo {
-    z-index: 999;
-  }
-  .ham {
-    font-size: 28px;
-    color: red;
-    display: inline-block;
-    z-index: 999;
-  }
-  .toggle:checked ~ .nav-links {
-    display: inline-block;
-    background-color: black;
-    height: 300px;
-  }
-}
-
 .first-section {
   background-color: #035f28;
   color: #dbd5d5;
