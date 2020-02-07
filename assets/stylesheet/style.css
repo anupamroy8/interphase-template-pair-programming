@@ -224,6 +224,12 @@ h2 {
   margin-top: 100px;
 }
 
+.img-res {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .second-btn {
   color: black;
   border: 1px solid black;
@@ -264,7 +270,7 @@ h2 {
   border-radius: 50%;
   padding: 12px;
   border: 1px solid white;
-  margin: 0 9px;
+  margin: 0 6px;
   font-size: 24px;
 }
 
@@ -284,7 +290,7 @@ a:hover {
 
 .contact {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 footer {
@@ -296,12 +302,48 @@ footer {
 }
 
 @media all and (max-width: 786px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 80px;
+    background-color: seagreen;
+  }
+  .nav-links li {
+    margin: 32px 0;
+  }
+  .nav-links li a {
+    color: red;
+  }
+  .logo {
+    z-index: 999;
+  }
+  .top-nav a {
+    font-size: 24px;
+  }
+  .ham {
+    font-size: 20px;
+    color: red;
+    display: inline-block;
+    z-index: 999;
+  }
+  .toggle:checked ~ .nav-links {
+    display: inline-block;
+    background-color: black;
+    height: 300px;
+  }
   .row h2, .article-row h2, .img-col h2 {
     font-size: 28px;
+    font-weight: 400;
   }
   .text-below-heading, .para-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
+    padding: 10px 20px;
   }
   .col1-3, .thirdsec-col {
     width: 100%;
@@ -330,6 +372,12 @@ footer {
     padding: 08px;
     border: 1px solid white;
     margin: 0 9px;
+    font-size: 18px;
+  }
+  .thirdsec-col h3 {
+    font-size: 24px;
+  }
+  footer {
     font-size: 18px;
   }
 }
